@@ -33,6 +33,31 @@ ul {
 	background-color: #f1f5f9;
 }
 
+.main-title::before,
+.main-title::after {
+	content: "";
+	position: absolute;
+	left: 0px;
+	bottom: -10px;
+	height: 3px;
+	border-radius: 6px;
+}
+
+.main-title {
+	width: fit-content;
+	margin-bottom: 40px;
+}
+
+.main-title::before {
+	width: 65%;
+	background-color: white;
+}
+
+.main-title::after {
+	width: 25%;
+	background-color: black;
+}
+
 .sidebar {
 	width: 200px;
 	box-shadow: 0 0 10px #ddd;
@@ -143,7 +168,7 @@ ul {
 }
 
 .head .icons .notifications::after {
-	content: "";	
+	content: "";
 	position: absolute;
 	top: -5px;
 	right: -10px;
