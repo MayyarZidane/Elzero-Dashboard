@@ -2,6 +2,10 @@
 	padding: 10px;
 }
 
+.p-15 {
+	padding: 15px;
+}
+
 .p-20 {
 	padding: 20px;
 }
@@ -34,11 +38,21 @@
 	border-radius: 6px;
 }
 
+.rad-10 {
+	border-radius: 10px;
+}
+
 .d-flex {
 	display: flex;
 }
 
 .align-center {
+	align-items: center;
+}
+
+.between-flex {
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -52,6 +66,10 @@
 
 .fs-14 {
 	font-size: 14px;
+}
+
+.w-full {
+	width: 100%;
 }
 
 @media (max-width: 767px) {
