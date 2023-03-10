@@ -210,7 +210,7 @@ ul {
 
 @media (max-width: 767px) {
   .wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: minmax(200px, 1fr);
     margin: 0px 10px;
   }
 }
