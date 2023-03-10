@@ -47,6 +47,10 @@
   margin-top: 20px;
 }
 
+.mb-5 {
+  margin-bottom: 5px;
+}
+
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -103,6 +107,10 @@
   color: var(--green-color);
 }
 
+.c-red {
+  color: var(--red-color);
+}
+
 .b-none {
   border: none;
 }
@@ -149,6 +157,10 @@
   align-items: center;
 }
 
+.f-wrap {
+  flex-wrap: wrap;
+}
+
 .d-grid {
   display: grid;
 }
@@ -177,6 +189,13 @@
   font-size: 15px;
 }
 
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
 .w-full {
   width: 100%;
 }

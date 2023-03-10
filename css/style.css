@@ -292,12 +292,6 @@ ul {
   flex-grow: 1;
 }
 
-@media (max-width: 767px) {
-  .targets .targets-row .details span:nth-child(2) {
-    margin-bottom: 35px;
-  }
-}
-
 .targets .targets-row .details .progress {
   height: 6px;
 }
@@ -356,4 +350,15 @@ ul {
 .targets .team-target .icon,
 .targets .team-target .progress {
   background: rgba(68, 206, 119, 20%);
+}
+
+.tickets .details .box {
+  border: 1px solid #ccc;
+  width: calc(50% - 10px);
+}
+
+@media (max-width: 767px) {
+  .tickets .details .box {
+    width: 100%;
+  }
 }
