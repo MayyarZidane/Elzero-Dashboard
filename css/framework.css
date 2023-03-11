@@ -20,8 +20,16 @@
   padding: 20px;
 }
 
+.pt-15 {
+  padding-top: 15px;
+}
+
 .pt-20 {
   padding-top: 20px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
 }
 
 .m-20 {
