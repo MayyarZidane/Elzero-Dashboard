@@ -116,7 +116,7 @@ ul {
 
 .sidebar ul li a {
   margin-bottom: 10px;
-  transition: var(--main-transition);
+  transition: background-color var(--main-transition);
 }
 
 .sidebar ul li a:hover,
@@ -261,7 +261,7 @@ ul {
 
 .welcome .visit {
   margin: 0px 0px 15px auto;
-  transition: var(--main-transition);
+  transition: background-color var(--main-transition);
 }
 
 .welcome .visit:hover {
@@ -403,7 +403,7 @@ ul {
 
 .tasks .delete {
   cursor: pointer;
-  transition: var(--main-transition);
+  transition: color var(--main-transition);
 }
 
 .tasks .delete:hover {
