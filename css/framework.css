@@ -5,6 +5,7 @@
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
+  --main-transition: 0.3s;
 }
 
 .p-10 {

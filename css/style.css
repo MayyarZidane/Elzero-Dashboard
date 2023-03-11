@@ -5,6 +5,7 @@
   --green-color: #22c55e;
   --red-color: #f44336;
   --grey-color: #888;
+  --main-transition: 0.3s;
 }
 
 * {
@@ -115,7 +116,7 @@ ul {
 
 .sidebar ul li a {
   margin-bottom: 10px;
-  transition: 0.3s;
+  transition: var(--main-transition);
 }
 
 .sidebar ul li a:hover,
@@ -260,7 +261,7 @@ ul {
 
 .welcome .visit {
   margin: 0px 0px 15px auto;
-  transition: 0.3s;
+  transition: var(--main-transition);
 }
 
 .welcome .visit:hover {
@@ -402,7 +403,7 @@ ul {
 
 .tasks .delete {
   cursor: pointer;
-  transition: 0.3s;
+  transition: var(--main-transition);
 }
 
 .tasks .delete:hover {
