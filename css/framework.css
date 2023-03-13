@@ -36,6 +36,10 @@
   padding-bottom: 15px;
 }
 
+.pl-15 {
+  padding-left: 15px;
+}
+
 .m-20 {
   margin: 20px;
 }
@@ -56,8 +60,16 @@
   margin-top: 10px;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mt-20 {
   margin-top: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
 }
 
 .mr-15 {
@@ -102,6 +114,10 @@
 
 .bg-green {
   background-color: var(--green-color);
+}
+
+.bg-red {
+  background-color: var(--red-color);
 }
 
 .c-white {

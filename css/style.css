@@ -422,3 +422,92 @@ ul {
   padding-bottom: 15px;
   border-bottom: 1px solid #eee;
 }
+
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+
+.last-project ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
+}
+
+.last-project ul li.done::before {
+  background-color: var(--blue-color);
+}
+
+.last-project ul li.current::before {
+  animation: 0.8s current-step infinite linear alternate-reverse;
+}
+
+@keyframes current-step {
+  to {
+    background-color: var(--blue-color);
+  }
+}
+
+.last-project .launch-img {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 150px;
+  opacity: 0.2;
+}
+
+.reminders .key {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.reminders .blue-color {
+  border-left: 2px solid var(--blue-color);
+}
+
+.reminders .green-color {
+  border-left: 2px solid var(--green-color);
+}
+
+.reminders .orange-color {
+  border-left: 2px solid var(--orange-color);
+}
+
+.reminders .red-color {
+  border-left: 2px solid var(--red-color);
+}
+
+.reminders .key {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.reminders .blue-color {
+  border-left: 2px solid var(--blue-color);
+}
+
+.reminders .green-color {
+  border-left: 2px solid var(--green-color);
+}
+
+.reminders .orange-color {
+  border-left: 2px solid var(--orange-color);
+}
+
+.reminders .red-color {
+  border-left: 2px solid var(--red-color);
+}
