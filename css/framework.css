@@ -249,6 +249,10 @@
   width: fit-content;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .btn-shape {
   padding: 5px 10px;
   border-radius: 6px;
