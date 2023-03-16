@@ -511,3 +511,16 @@ ul {
 .reminders .red-color {
   border-left: 2px solid var(--red-color);
 }
+
+.latest-post .avatar {
+  width: 48px;
+  height: 48px;
+}
+
+.latest-post .post-content {
+  text-transform: capitalize;
+  line-height: 1.6;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  min-height: 100px;
+}
