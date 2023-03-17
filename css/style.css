@@ -580,3 +580,46 @@ ul {
 .social-media .linkedin a {
   background-color: #0a66c2;
 }
+
+.projects .responsive-table {
+  overflow-x: auto;
+}
+
+.projects table {
+  min-width: 1000px;
+  border-spacing: 0;
+}
+
+.projects table th {
+  background-color: #eee;
+}
+
+.projects table th,
+.projects table td {
+  padding: 15px;
+}
+
+.projects table td {
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  transition: background-color var(--main-transition);
+}
+
+.projects table tr:hover td {
+  background-color: #f7f7f7;
+}
+
+.projects table td:last-of-type {
+  border-right: 1px solid #eee;
+}
+
+.projects table img {
+  width: 32px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+}
+
+.projects table img:not(:first-child) {
+  margin-left: -20px;
+}
