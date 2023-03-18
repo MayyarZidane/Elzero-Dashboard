@@ -697,3 +697,26 @@ ul {
 .security-info > div:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
+
+.social-info div {
+  border: 1px solid #ccc;
+}
+
+.social-info i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+  transition: var(--main-transition);
+}
+
+.social-info input {
+  border: none;
+  background-color: transparent;
+}
+
+.social-info div:focus-within i {
+  color: black;
+}
