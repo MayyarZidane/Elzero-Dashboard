@@ -704,6 +704,14 @@ ul {
   border-bottom: 1px solid #ccc;
 }
 
+.security-info > div:first-child a {
+  transition: var(--main-transition);
+}
+
+.security-info > div:first-of-type a:hover {
+  background-color: var(--blue-alt-color);
+}
+
 .social-info div {
   border: 1px solid #ccc;
 }
