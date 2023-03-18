@@ -685,3 +685,12 @@ ul {
   min-height: 250px;
   border: 1px solid #ccc;
 }
+
+.settings-page .general-info input {
+  border: 1px solid #ccc;
+}
+
+.settings-page .general-info .email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
