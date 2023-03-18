@@ -694,3 +694,7 @@ ul {
   display: inline-flex;
   width: calc(100% - 80px);
 }
+
+.security-info > div:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
