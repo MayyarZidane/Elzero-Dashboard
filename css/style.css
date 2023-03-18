@@ -669,6 +669,12 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #eee;
+  color: #aaa;
+}
+
 @media (max-width: 767px) {
   .settings-page {
     grid-template-columns: minmax(200px, 1fr);
