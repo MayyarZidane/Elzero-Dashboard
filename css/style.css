@@ -734,3 +734,52 @@ ul {
 .social-info div:focus-within i {
   color: black;
 }
+
+.widgets-control input[type="checkbox"] {
+  display: none;
+}
+
+.widgets-control input[type="checkbox"]:checked + label::after {
+  transform: translateY(-50%) scale(1);
+}
+
+.widgets-control .control label {
+  padding-left: 25px;
+  cursor: pointer;
+  position: relative;
+}
+
+.widgets-control .control label:hover::before {
+  border-color: var(--blue-alt-color);
+}
+
+.widgets-control .control label::before,
+.widgets-control .control label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  transform: translateY(-50%);
+  transition: var(--main-transition);
+}
+
+.widgets-control .control label::before {
+  left: 0px;
+  border: 2px solid var(--grey-color);
+  border-radius: 3px;
+}
+
+.widgets-control .control label::after {
+  font: var(--fa-font-solid);
+  font-size: 12px;
+  content: "\f00c";
+  left: 2px;
+  background-color: var(--blue-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%) scale(0) rotate(360deg);
+  border-radius: 1px;
+}
