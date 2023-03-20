@@ -891,3 +891,22 @@ ul {
 .profile-page .info-box .box > div {
   min-width: 250px;
 }
+
+.profile-page .info-box .box .toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+
+.profile-page .info-box .box .toggle-checkbox:checked + .toggle-switch::before {
+  left: 60px;
+}
+
+.profile-page .info-box .box .toggle-switch {
+  height: 22px;
+  border-radius: 11px;
+}
+
+.profile-page .info-box .box .toggle-switch::before {
+  font-size: 10px;
+  width: 14px;
+  height: 14px;
+}
