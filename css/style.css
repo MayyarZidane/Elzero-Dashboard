@@ -783,3 +783,71 @@ ul {
   transform: translateY(-50%) scale(0) rotate(360deg);
   border-radius: 1px;
 }
+
+.backup-control input[type="radio"] {
+  display: none;
+}
+
+.backup-control input[type="radio"]:checked + label::before {
+  border-color: var(--blue-color);
+}
+
+.backup-control input[type="radio"]:checked + label::after {
+  transform: translateY(-50%) scale(1);
+}
+
+.backup-control .time label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.backup-control .time label::before,
+.backup-control .time label::after {
+  content: "";
+  top: 50%;
+  position: absolute;
+  transition: color var(--main-transition), border-color var(--main-transition),
+    transform var(--main-transition);
+  border-radius: 50%;
+}
+
+.backup-control .time label::before {
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--grey-color);
+  transform: translateY(-50%);
+}
+
+.backup-control .time label::after {
+  content: "";
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color);
+  color: white;
+  transform: translateY(-50%) scale(0);
+}
+
+.backup-control .servers {
+  border-top: 1px solid #eee;
+}
+
+.backup-control .servers .server {
+  flex-grow: 1;
+}
+
+.backup-control .servers .server input[type="radio"]:checked + label {
+  color: var(--blue-color);
+  border-color: var(--blue-color);
+}
+
+.backup-control .servers .server label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  transition: border-color var(--main-transition), color var(--main-transition);
+  cursor: pointer;
+}

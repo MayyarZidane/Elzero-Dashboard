@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/framework.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +13,7 @@
 			700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Settings</title>
   </head>
 
@@ -304,6 +304,61 @@
                 checked
               />
               <label for="top-search">Top Search</label>
+            </div>
+          </div>
+          <div class="backup-control p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-10">Backup Manager</h2>
+            <p class="mt-0 mb-20 c-grey fs-15">
+              Control Backup Time And Location
+            </p>
+            <div class="time d-flex align-center mb-15">
+              <input
+                type="radio"
+                name="time"
+                id="daily"
+                value="daily"
+                checked
+              />
+              <label for="daily">Daily</label>
+            </div>
+            <div class="time d-flex align-center mb-15">
+              <input type="radio" name="time" id="weakly" value="weakly" />
+              <label for="weakly">Weakly</label>
+            </div>
+            <div class="time d-flex align-center mb-15">
+              <input type="radio" name="time" id="monthly" value="monthly" />
+              <label for="monthly">Monthly</label>
+            </div>
+            <div
+              class="servers block-mobile between-flex gap-20 mb-15 pt-20 text-c"
+            >
+              <div class="server mb-15">
+                <input
+                  type="radio"
+                  name="server"
+                  id="megaman"
+                  value="megaman"
+                  checked
+                />
+                <label for="megaman" class="p-20 rad-6">
+                  <i class="fa-sharp fa-solid fa-server d-block mb-15"></i>
+                  Megaman
+                </label>
+              </div>
+              <div class="server mb-15">
+                <input type="radio" name="server" id="zero" value="zero" />
+                <label for="zero" class="p-20 rad-6">
+                  <i class="fa-sharp fa-solid fa-server d-block mb-15"></i>
+                  Zero
+                </label>
+              </div>
+              <div class="server mb-15">
+                <input type="radio" name="server" id="sigma" value="sigma" />
+                <label for="sigma" class="p-20 rad-6">
+                  <i class="fa-sharp fa-solid fa-server d-block mb-15"></i>
+                  Sigma
+                </label>
+              </div>
             </div>
           </div>
         </div>
