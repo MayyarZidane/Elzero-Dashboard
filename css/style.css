@@ -851,3 +851,43 @@ ul {
   transition: border-color var(--main-transition), color var(--main-transition);
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  .profile-page .avatar-box {
+    width: 300px;
+    border-right: 1px solid #eee;
+  }
+}
+
+.profile-page .avatar-box img {
+  width: 120px;
+}
+
+.profile-page .avatar-box i {
+  color: orange;
+  font-size: 13px;
+}
+
+.profile-page .avatar-box .level-progress {
+  width: 75%;
+  height: 5px;
+  margin: auto;
+}
+
+.profile-page .info-box {
+  width: 100%;
+}
+
+.profile-page .info-box .box {
+  width: 100%;
+  transition: background-color var(--main-transition);
+  border-bottom: 1px solid #eee;
+}
+
+.profile-page .info-box .box:hover {
+  background-color: #faf7f7;
+}
+
+.profile-page .info-box .box > div {
+  min-width: 250px;
+}
