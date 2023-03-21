@@ -8,6 +8,10 @@
   --main-transition: 0.3s;
 }
 
+.p-5 {
+  padding: 5px;
+}
+
 .p-10 {
   padding: 10px;
 }
@@ -216,6 +220,10 @@
 
 .d-grid {
   display: grid;
+}
+
+.gap-10 {
+  gap: 10px;
 }
 
 .gap-20 {

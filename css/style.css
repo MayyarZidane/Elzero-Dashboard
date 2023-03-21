@@ -910,3 +910,29 @@ ul {
   width: 14px;
   height: 14px;
 }
+
+.profile-page .other-info ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.profile-page .other-info ul span {
+  display: inline-block;
+  width: 85px;
+  text-align: center;
+}
+
+.profile-page .other-info .activities {
+  flex-grow: 1;
+}
+
+.profile-page .other-info .activities .activity:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.profile-page .other-info .activities .activity img {
+  max-width: 80px;
+}
+
+.profile-page .other-info .activities .activity .info {
+  flex-grow: 1;
+}
