@@ -1026,3 +1026,51 @@ ul {
 .projects-page .project .project-info .progress span {
   height: 100%;
 }
+
+.courses-page {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .courses-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.courses-page .course {
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.courses-page .course .cover {
+  max-width: 100%;
+}
+
+.courses-page .course .instructor {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 55px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.courses-page .course .info .description {
+  line-height: 1.6;
+}
+
+.courses-page .course .more-info {
+  border-top: 1px solid #eee;
+}
+
+.courses-page .course .more-info .title {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  border-top: 1px solid #eee;
+}
