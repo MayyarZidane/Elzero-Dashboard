@@ -269,6 +269,11 @@
 .fs-25 {
   font-size: 25px;
 }
+
+.w-100 {
+  width: 100px;
+}
+
 .w-full {
   width: 100%;
 }

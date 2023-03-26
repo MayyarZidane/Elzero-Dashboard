@@ -1074,3 +1074,61 @@ ul {
   transform: translate(-50%, -50%);
   border-top: 1px solid #eee;
 }
+
+.friends-page {
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .friends-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.friends-page .friend .contact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.friends-page .friend .contact i {
+  padding: 10px;
+  background-color: #eee;
+  color: var(--grey-color);
+  border-radius: 50%;
+  transition: background-color var(--main-transition),
+    color var(--main-transition);
+}
+
+.friends-page .friend .contact i:hover {
+  color: white;
+  background-color: var(--blue-color);
+}
+
+.friends-page .friend .info {
+  border-bottom: 1px solid #eee;
+}
+
+.friends-page .friend .info img {
+  border-radius: 50%;
+}
+
+.friends-page .friend .stats {
+  border-bottom: 1px solid #eee;
+}
+
+.friends-page .friend .stats .vip {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  font-size: 40px;
+  opacity: 0.5;
+  transform: translateY(-50%);
+}
+
+.friends-page .friend .more-info a {
+  display: inline-block;
+}
