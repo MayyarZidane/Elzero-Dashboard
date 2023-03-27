@@ -1241,3 +1241,66 @@ ul {
 .files-page .files .file .info {
   border-top: 1px solid #eee;
 }
+
+.plans-page {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .plans-page {
+    grid-template-columns: minmax(200px, 1fr);
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.plans-page .plan .info {
+  border: 3px solid white;
+  outline: 3px solid transparent;
+}
+
+.plans-page .green-color .info {
+  outline-color: var(--green-color);
+}
+
+.plans-page .blue-color .info {
+  outline-color: var(--blue-color);
+}
+
+.plans-page .orange-color .info {
+  outline-color: var(--orange-color);
+}
+
+.plans-page .plan .info .price {
+  font-size: 40px;
+  width: fit-content;
+  margin: auto;
+}
+
+.plans-page .plan .info .price span {
+  position: absolute;
+  left: -15px;
+  top: 0px;
+  font-size: 20px;
+}
+
+.plans-page .plan .features li {
+  border-bottom: 1px solid #eee;
+}
+
+.plans-page .plan .features li i:first-child {
+  font-size: 18px;
+}
+
+.plans-page .plan .features li i:not(.yes, .help) {
+  color: var(--red-color);
+}
+
+.plans-page .plan .features li .yes {
+  color: var(--green-color);
+}
+
+.plans-page .plan .features li .help {
+  margin-left: auto;
+}
